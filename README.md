@@ -8,6 +8,7 @@
 - [x] Attach database to ui
 - [x] Add Authentification(w/ clerk)
 - [ ] Add image upload
+- [ ] "taint"(server-only)
 - [ ] Error management(w/sentry)
 - [ ] Routing/image page(parallel  route)
 - [ ] delete button (w/ server action)
