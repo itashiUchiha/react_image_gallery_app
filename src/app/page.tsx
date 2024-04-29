@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "~/server/db";
 import { images } from "~/server/db/schema";
 import { getMyImages } from "~/server/queries";
+import Image from 'next/image'
 
 export const dynamic = "force-dynamic"; 
 
@@ -12,7 +13,11 @@ const images = await getMyImages();
   <div className="flex flex-wrap gap-4">
         {images.map((image) => (
           <div className="flex w-48 flex-col" key={image.id}>
-            <img src={image.url}  alt="image" />
+            <Image src={image.url}
+             style={{objectFit:"contain"}} 
+             width={480}
+             height={480}
+             alt={image.name} />
             <div>{image.name}</div>
           </div>
         ))}
