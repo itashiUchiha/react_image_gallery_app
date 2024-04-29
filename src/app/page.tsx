@@ -13,13 +13,17 @@ const images = await getMyImages();
   <div className="flex flex-wrap gap-4">
         {images.map((image) => (
           <div className="flex w-48 flex-col" key={image.id}>
+            <Link href={`/photos/${image.id}`}>
             <Image src={image.url}
              style={{objectFit:"contain"}} 
              width={480}
              height={480}
              alt={image.name} />
+            </Link>
             <div>{image.name}</div>
+  
           </div>
+
         ))}
       </div>
     );
