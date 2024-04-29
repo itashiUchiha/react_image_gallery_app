@@ -2,12 +2,12 @@ import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import { db } from "~/server/db";
 import { images } from "~/server/db/schema";
+import { getMyImages } from "~/server/queries";
+
 export const dynamic = "force-dynamic"; 
 
 async function Images(){
-  const images = await db.query.images.findMany({
-    orderBy:  (model,{desc}) => desc(model.id),
-  });
+const images = await getMyImages();
   return(
   <div className="flex flex-wrap gap-4">
         {images.map((image) => (
@@ -20,7 +20,6 @@ async function Images(){
     );
 }
 export default  async function HomePage() {
-  
   return (
     <main className="">
       <SignedOut>
