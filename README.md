@@ -9,9 +9,9 @@
 - [x] Add Authentification(w/ clerk)
 - [x] Add image upload
 - [x] "taint"(server-only)
-- [ ] Use Next/Image
-- [ ] Error management(w/sentry)
-- [ ] Routing/image page(parallel  route)
+- [x] Use Next/Image
+- [x] Error management(w/sentry)
+- [] Routing/image page(parallel  route)
 - [ ] delete button (w/ server action)
 - [ ]Analytics (posthog)
 - [ ]Rate limiting(uptash)
