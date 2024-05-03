@@ -5,7 +5,5 @@ export  default  function PhotoPage({
   params: { id: string };
 }) {
   return (
-    
       <FullImageView id={Number(photoId)}/>
-    
 );}
