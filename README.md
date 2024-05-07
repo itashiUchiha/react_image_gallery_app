@@ -12,7 +12,8 @@
 - [x] Use Next/Image
 - [x] Error management(w/sentry)
 - [x] Routing/image page(parallel  route)
-- [] delete button (w/ server action)
+- [ ] setup shadui(for toast)
+- [ ] delete button (w/ server action)
 - [ ]Analytics (posthog)
 - [ ]Rate limiting(uptash)
 
