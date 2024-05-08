@@ -13,7 +13,7 @@
 - [x] Error management(w/sentry)
 - [x] Routing/image page(parallel  route)
 - [x] setup shadui(for toast)
-- [ ]Analytics (posthog)
+- [x] Analytics (posthog)
 - [ ] delete button (w/ server action)
 - [ ]Rate limiting(uptash)
 
