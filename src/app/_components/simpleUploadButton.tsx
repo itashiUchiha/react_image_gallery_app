@@ -54,7 +54,7 @@ export function SimpleUploadButton(){
         onUploadBegin (){
             toast(
              <div className="flex gap-2 text-white items-center" >
-              <LoadingIconSvg/><span className="text-lg">Uploading...</span> 
+              <LoadingIconSvg/><span className="text-lg">Uploading...</span>
               </div>,
               {
                 duration: 1000000,
