@@ -64,6 +64,11 @@ export function SimpleUploadButton(){
                 id: "upload-begin",  
               });
         },
+        onUploadError (){
+          posthog.capture("upload error");
+          toast("Upload failed file to big");
+
+        },
         onClientUploadComplete (){
             router.refresh();
             toast.dismiss("upload-begin");
