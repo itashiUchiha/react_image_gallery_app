@@ -14,7 +14,7 @@
 - [x] Routing/image page(parallel  route)
 - [x] setup shadui(for toast)
 - [x] Analytics (posthog)
-- [ ] delete button (w/ server action)
+- [x] delete button (w/ server action)
 - [ ]Rate limiting(uptash)
 
  
